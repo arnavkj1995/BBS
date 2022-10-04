@@ -1,0 +1,35 @@
+ARENA_WIDTH = 800
+ARENA_LENGTH = 700
+
+COLLISION_TYPES = {
+    "walls": 0,
+    "agent": 1,
+    "objects": 2,
+    "goal": 3,
+    "distractors": 4,
+}
+
+FPS = 60
+FRAMESKIP = 100
+
+NUM_OBJECTS = 5
+NUM_DISTRACTORS = 1
+
+WALL_THICKNESS_X = 125
+WALL_THICKNESS_Y = 125
+
+AGENT_VIEW = 55
+AGENT_RADIUS = 15
+ANGLE_MOMENTUM = 0.0
+GOAL_BOUNCE_FACTOR = 0.3
+MAX_ACC = 400
+MAX_VEL = 800
+DISTRACTOR_ACTION_SCALE = 0.2
+
+GOAL_WIDTH = 100
+GOAL_HEIGHT_FACTOR = 0.5
+
+CAMERA_TYPE = "agent_centric"
+# choose between "agent_centric" and "global"
+
+DISTRACTOR_RADIUS = 12
