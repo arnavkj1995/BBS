@@ -1,0 +1,14 @@
+addict==2.4.0
+imageio
+imageio-ffmpeg
+moviepy
+numpy
+opencv-python
+Pillow
+pygame==2.0.1
+pymunk==6.2.0
+PyYAML
+matplotlib
+gym
+pandas
+mujoco-py<2.2,>=2.1
