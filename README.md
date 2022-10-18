@@ -1,4 +1,7 @@
 # BringBackShapes Environment
+Codebase for the BringBackShapes (BBS) environment introduced in [Learning Robust Dynamics through Variational Sparse Gating](https://arnavkj1995.github.io/pubs/Jain22.pdf).
+
+![](assets/bbs.gif)
 
 ## Setup
 
@@ -9,20 +12,20 @@ conda env update --file env.yml --prune
 pip install -e .
 ```
 
-last command to update the env after making mods to the `requirements.txt`
-
-Make sure you have installed mujoco and mujoco_py. [Download](https://mujoco.org/download) and extract `mujoco210` into your `~/.mujoco` directory.
-
+To run a demo of the environment:
 ```bash
-pip install 'mujoco-py<2.2,>=2.1'
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/sjoshi/.mujoco/mujoco210/bin
-```
-
-## Envs
-
-```bash
-python demos/demo_2d_playground.py
 python demos/demo_2d_env.py
 ```
 
-to run the current state of the 2d env.
+## Bibtex
+If you find this code useful, please cite:
+
+```
+@InProceedings{Jain22,
+    author    = "Jain, Arnav Kumar and Sujit, Shivakanth and Joshi, Shruti and Michalski, Vincent and Hafner, Danijar and Kahou, Samira Ebrahimi",
+    title     = "Learning Robust Dynamics through Variational Sparse Gating",
+    booktitle = {Advances in Neural Information Processing Systems},
+    month     = {December},
+    year      = {2022}
+  }
+```
